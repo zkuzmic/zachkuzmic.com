@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="The online portfolio of Zach Kuzmic, a User Experience Designer living in Austin, Texas. He enjoys creating web apps, mobile apps, responsive websites, and eats lots of tacos." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/ghost/content/themes/zk-theme/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/ghost/content/themes/zk-theme/assets/css/zk.css" />
+    <link rel="stylesheet" type="text/css" href="/ghost/content/themes/zk-theme/assets/css/responsive-nav.css" />
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+    <script type="text/javascript">	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26769005-1']);
+	  _gaq.push(['_setDomainName', 'zachkuzmic.com']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body class="{{body_class}}">
+	<header class="site-header max-width">
+		<nav class="main-nav {{current_page}}">
+			<a href="/"><span>WORK</span></a>
+			<a href="/about"><span>ABOUT ME</span></a>
+			<a href="/blog"><span>BLOG</span></a>
+		</nav>
+		<div class="logo">
+			<a href="/">
+				<h1>
+					<span class="ZK">ZK</span>
+					<span class="name">Zach Kuzmic</span>
+					<span class="title">UX/UI Design</span>
+				</h1>
+			</a>
+		</div>
+	</header>
+	{{message}}
+	{{exists}}
+	{{{body}}}
+    <section class="width-100 dark-section light-blue-section">
+		<div class="max-width">
+			<p><a href="/">Work</a> <span>|</span> <a href="/about">About Me</a> <span>|</span> <a href="/blog">Blog</a></p>
+		</div>
+		<footer class="max-width">Zach Kuzmic 2014</footer>
+	</section>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+    
+    {{{jqueryCDN}}}
+	{{{current_page_scripts}}}
+	
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/ghost/content/themes/zk-theme/assets/js/index.js"></script>
+    <script src="/js/responsive-nav.min.js"></script>
+    <script src="/js/zk.js"></script>
+
+</body>
+</html>
