@@ -210,9 +210,6 @@ header.site-header{
 				color: #57A3E8;
 			}
 			
-			&.current-page{
-				border-bottom: 4px solid #57A3E8;
-			}
 		}
 		
 		a:nth-child(3){
@@ -242,19 +239,47 @@ header.site-header{
 			float: right;
 			margin: 0;
 			width: 100%;
+			border-bottom: 1px solid #ddd;
+			
 			a{	
 				font-size: 1em;
 				display: block;
 				margin: 0;
 				padding: 10px 30px;
 				border-bottom: 1px solid #ddd;
-				&.current-page{
-					border-bottom: 1px solid #ddd;
-					padding-left: 17px;
-					span{
-						border-left: 5px solid #57A3E8;
-						padding-left: 8px;
-					}
+			}
+
+			a:nth-child(3){
+				border-left: 8px solid #57A3E8;
+				border-bottom: 1px solid #ddd;
+				padding-left: 22px;
+			}
+			
+			&.current-page-1{
+				a:nth-child(1){
+					border-left: 8px solid #57A3E8;
+					padding-left: 22px;
+					border-bottom: none;
+				}
+				a:nth-child(2){
+					border-top: 1px solid #ddd;
+				}
+				a:nth-child(3){
+					border-left: none;
+					padding-left: 30px;
+				}
+			}
+			
+			&.current-page-2{
+				a:nth-child(2){
+					border-left: 8px solid #57A3E8;
+					border-bottom: none;
+					padding-left: 22px;
+				}
+				a:nth-child(3){
+					border-left: none;
+					border-top: 1px solid #ddd;
+					padding-left: 30px;
 				}
 			}
 		}
