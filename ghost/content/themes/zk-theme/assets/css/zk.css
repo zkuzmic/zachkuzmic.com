@@ -674,7 +674,7 @@ footer.max-width {
   .post-footer .wrapper {
     overflow: hidden;
     width: 450px;
-    margin: 0 auto; }
+    margin: 0 auto 3em auto; }
     @media (max-width: 500px) {
       .post-footer .wrapper {
         width: 300px;
