@@ -882,15 +882,17 @@ footer.max-width{
 */
 .post-footer {
     position: relative;
-    margin: 6rem 0 8rem 0;
-    padding: 4rem 0;
-	border-top: #EBF2F6 1px solid;
-	border-bottom: #EBF2F6 1px solid;
+    margin: 4rem 0 8rem 0;
+    padding: 2rem 0 4rem 0;
 
 	.wrapper{
 		overflow: hidden;
-		width: 450px;
-		margin: 0 auto 3em auto;
+		width: 100%;
+		margin: 0 auto 4em auto;
+		text-align: center;
+		border-bottom: #EBF2F6 1px solid;
+		border-top: #EBF2F6 1px solid;
+		padding: 1.5em 20px 1em 20px;
 		
 		@media (max-width: 500px){
 			width: 300px;
@@ -904,33 +906,33 @@ footer.max-width{
 				width: 100%;
 				margin: 0;
 				text-align: center;
-
-				h4{
-					margin-bottom: 1em;
-				}
 			}
 		}
 
 		.profile-img{
-			width: 200px;
-			float: left;
+			width: 125px;
 		}
 
 		.byline{
-			float: left;
-			margin-left: 3%;
-			padding-top: 1em;
+			text-align: center;
+			width: 100%;
+			margin-top: 0.2em;
 
 			h3{
-				font-size: 1.6em;
-				margin-bottom: 0.2em;
+				font-size: 0.9em;
+				margin-bottom: 0.3em;
+				color: #999;
+
+				span{
+					color: #333334;
+				}
 			}
 
 			h4{
-				font-size: 0.9em;
-				color: #bbb;
+				font-size: 0.7em;
 				font-weight: normal;
-				margin-bottom: 2em;
+				color: #999;
+				margin-bottom: 1em;
 			}
 		}
 	}

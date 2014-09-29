@@ -667,14 +667,16 @@ footer.max-width {
 */
 .post-footer {
   position: relative;
-  margin: 6rem 0 8rem 0;
-  padding: 4rem 0;
-  border-top: #EBF2F6 1px solid;
-  border-bottom: #EBF2F6 1px solid; }
+  margin: 4rem 0 8rem 0;
+  padding: 2rem 0 4rem 0; }
   .post-footer .wrapper {
     overflow: hidden;
-    width: 450px;
-    margin: 0 auto 3em auto; }
+    width: 100%;
+    margin: 0 auto 4em auto;
+    text-align: center;
+    border-bottom: #EBF2F6 1px solid;
+    border-top: #EBF2F6 1px solid;
+    padding: 1.5em 20px 1em 20px; }
     @media (max-width: 500px) {
       .post-footer .wrapper {
         width: 300px;
@@ -684,21 +686,21 @@ footer.max-width {
         .post-footer .wrapper div.byline {
           width: 100%;
           margin: 0;
-          text-align: center; }
-          .post-footer .wrapper div.byline h4 {
-            margin-bottom: 1em; } }
+          text-align: center; } }
     .post-footer .wrapper .profile-img {
-      width: 200px;
-      float: left; }
+      width: 125px; }
     .post-footer .wrapper .byline {
-      float: left;
-      margin-left: 3%;
-      padding-top: 1em; }
+      text-align: center;
+      width: 100%;
+      margin-top: 0.2em; }
       .post-footer .wrapper .byline h3 {
-        font-size: 1.6em;
-        margin-bottom: 0.2em; }
-      .post-footer .wrapper .byline h4 {
         font-size: 0.9em;
-        color: #bbb;
+        margin-bottom: 0.3em;
+        color: #999; }
+        .post-footer .wrapper .byline h3 span {
+          color: #333334; }
+      .post-footer .wrapper .byline h4 {
+        font-size: 0.7em;
         font-weight: normal;
-        margin-bottom: 2em; }
+        color: #999;
+        margin-bottom: 1em; }
