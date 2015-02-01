@@ -461,6 +461,10 @@ footer.max-width{
 				&:hover{
 					background: rgba(0,0,0,0.2);
 				}
+
+				i{
+					margin-left: 0.7rem;
+				}
 			}
 		}
 		
@@ -942,3 +946,13 @@ footer.max-width{
 		}
 	}
 }
+
+
+/*
+	404 PAGE
+*/
+.error404{
+	text-align: center;
+	padding-bottom: 3em;
+}
+
