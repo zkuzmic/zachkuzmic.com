@@ -143,10 +143,6 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
             return attrs;
         }
 
-        if (options && options.idOnly) {
-            return attrs.id;
-        }
-
         if (options && options.include) {
             this.include = _.union(this.include, options.include);
         }
@@ -154,12 +150,9 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
         _.each(this.relations, function (relation, key) {
             if (key.substring(0, 7) !== '_pivot_') {
                 // if include is set, expand to full object
-                // 'toMany' relationships are included with ids if not expanded
                 var fullKey = _.isEmpty(options.name) ? key : options.name + '.' + key;
                 if (_.contains(self.include, fullKey)) {
                     attrs[key] = relation.toJSON({name: fullKey, include: self.include});
-                } else if (relation.hasOwnProperty('length')) {
-                    attrs[key] = relation.toJSON({idOnly: true});
                 }
             }
         });
@@ -316,7 +309,7 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
             slugTryCount = 1,
             baseName = Model.prototype.tableName.replace(/s$/, ''),
             // Look for a matching slug, append an incrementing number if so
-            checkIfSlugExists;
+            checkIfSlugExists, longSlug;
 
         checkIfSlugExists = function (slugToFind) {
             var args = {slug: slugToFind};
@@ -332,6 +325,14 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
                 }
 
                 slugTryCount += 1;
+
+                // If we shortened, go back to the full version and try again
+                if (slugTryCount === 2 && longSlug) {
+                    slugToFind = longSlug;
+                    longSlug = null;
+                    slugTryCount = 1;
+                    return checkIfSlugExists(slugToFind);
+                }
 
                 // If this is the first time through, add the hyphen
                 if (slugTryCount === 2) {
@@ -352,6 +353,12 @@ ghostBookshelf.Model = ghostBookshelf.Model.extend({
 
         // Remove trailing hyphen
         slug = slug.charAt(slug.length - 1) === '-' ? slug.substr(0, slug.length - 1) : slug;
+
+        // If it's a user, let's try to cut it down (unless this is a human request)
+        if (baseName === 'user' && options && options.shortSlug && slugTryCount === 1 && slug !== 'ghost-owner') {
+            longSlug = slug;
+            slug = (slug.indexOf('-') > -1) ? slug.substr(0, slug.indexOf('-')) : slug;
+        }
 
         // Check the filtered slug doesn't match any of the reserved keywords
         return filters.doFilter('slug.reservedSlugs', config.slugs.reserved).then(function (slugList) {

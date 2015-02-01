@@ -27,9 +27,8 @@ validator.extend('isEmptyOrURL', function (str) {
     return (_.isEmpty(str) || validator.isURL(str, {require_protocol: false}));
 });
 
-// Validation validation against schema attributes
-// values are checked against the validation objects
-// form schema.js
+// Validation against schema attributes
+// values are checked against the validation objects from schema.js
 validateSchema = function (tableName, model) {
     var columns = _.keys(schema[tableName]),
         validationErrors = [];
@@ -98,16 +97,18 @@ validateSettings = function (defaultSettings, model) {
     return Promise.resolve();
 };
 
-// A Promise that will resolve to an object with a property for each installed theme.
-// This is necessary because certain configuration data is only available while Ghost
-// is running and at times the validations are used when it's not (e.g. tests)
-availableThemes = requireTree(config.paths.themePath);
-
 validateActiveTheme = function (themeName) {
     // If Ghost is running and its availableThemes collection exists
     // give it priority.
     if (config.paths.availableThemes && Object.keys(config.paths.availableThemes).length > 0) {
         availableThemes = Promise.resolve(config.paths.availableThemes);
+    }
+
+    if (!availableThemes) {
+        // A Promise that will resolve to an object with a property for each installed theme.
+        // This is necessary because certain configuration data is only available while Ghost
+        // is running and at times the validations are used when it's not (e.g. tests)
+        availableThemes = requireTree(config.paths.themePath);
     }
 
     return availableThemes.then(function (themes) {
@@ -161,6 +162,7 @@ validate = function (value, key, validations) {
 };
 
 module.exports = {
+    validator: validator,
     validateSchema: validateSchema,
     validateSettings: validateSettings,
     validateActiveTheme: validateActiveTheme
