@@ -83,7 +83,7 @@ function onRequest(req, res) {
 	
 	//data to be placed in page
 	var source = {
-		meta_title : "Zach Kuzmic - User Experience Designer",
+		meta_title : "Zach Kuzmic - User Experience Designer in Austin, Texas",
 		body_class : bodyClass,
 		current_page : currentPage,
 		body : pageContent,
