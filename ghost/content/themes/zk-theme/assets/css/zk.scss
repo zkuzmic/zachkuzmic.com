@@ -221,6 +221,12 @@ header.site-header{
 			border-bottom: 4px solid #57A3E8;
 		}
 		
+		&.current-page-0{
+			a:nth-child(3){
+				border-bottom: none;
+			}
+		}
+
 		&.current-page-1{
 			a:nth-child(1){
 				border-bottom: 4px solid #57A3E8;
