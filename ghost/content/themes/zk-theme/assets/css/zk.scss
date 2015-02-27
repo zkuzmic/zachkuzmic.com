@@ -52,9 +52,13 @@ body{
 	color: #fff;
 }
 
-
 .dark-section{
 	background: #333;
+	color: #fff;
+}
+
+.google-blue-section{
+	background: #0266C8;
 	color: #fff;
 }
 
@@ -591,6 +595,7 @@ footer.max-width{
 				max-width: 100%;
 				border: 1px #ddd solid; 
 				margin: 2em 0;
+				background-color: #888;
 				
 				a{
 					text-decoration: none;
@@ -608,6 +613,7 @@ footer.max-width{
 				max-width: 100%;
 				margin-bottom: 0;
 				display: block;
+				margin: 0 auto;
 			}
 			
 			.back-to-work{
