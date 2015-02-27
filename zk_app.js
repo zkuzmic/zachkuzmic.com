@@ -69,16 +69,20 @@ function onRequest(req, res) {
 	}else{
 		//page does not exist, go to 404
 		pageContent = fs.readFileSync("404.hbs", "utf8");
+		currentPage = "current-page-0";
 	}
 	
 	//specific page stuff
 	if (requestedPage.substring(0, 5) == "work/"){
-		bodyClass = "work-item-page " + requestedPage;
+		bodyClass = "work-item-page " + path;
 		currentPage = "current-page-1";
 	} else if (requestedPage.substring(0, 5) == "about"){
 		bodyClass = "about-page";
 		currentPage = "current-page-2";
 		currentPageScripts = '<script src="/js/engage.lastfm.js"></script><script src="/js/twitter-fetcher.js"></script>';
+	} else if (requestedPage.substring(0, 6) == "google"){
+		bodyClass = "work-item-page " + path;
+		currentPage = "current-page-0";
 	}
 	
 	//data to be placed in page
