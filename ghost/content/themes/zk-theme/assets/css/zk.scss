@@ -137,7 +137,7 @@ header.site-header{
 		padding: 0;
 		margin-top: 0;
 	}
-	
+
 	.logo {
 		text-align: center;
 		width: 12rem;
@@ -152,12 +152,12 @@ header.site-header{
 				overflow: hidden;
 			}
 		}
-		
+
 		a{
 			text-decoration: none;
 			color: #bababa;
 			text-rendering: optimizeLegibility;
-			
+
 			h1{
 				line-height: 1;
 				transition: color ease 0.3s;
@@ -170,7 +170,7 @@ header.site-header{
 					font-size: 8rem;
 					margin: 0 0 0 -2px;
 					letter-spacing: 0px;
-					text-indent: 0;			
+					text-indent: 0;
 				}
 				span.name{
 					display:block;
@@ -190,16 +190,16 @@ header.site-header{
 					margin-top: 0rem;
 					text-indent: 0;
 				}
-			}	
+			}
 		}
-				
+
 	}
 	nav.main-nav{
 		float: right;
 		margin-top: 1.8em;
 		line-height: 1;
 		overflow: visible;
-		
+
 		a{
 			text-decoration: none;
 			color: #bababa;
@@ -214,17 +214,17 @@ header.site-header{
 			transition-delay: initial;
 			margin-left: 55px;
 			padding-bottom: 5px;
-			
+
 			&:hover{
 				color: #57A3E8;
 			}
-			
+
 		}
-		
+
 		a:nth-child(3){
 			border-bottom: 4px solid #57A3E8;
 		}
-		
+
 		&.current-page-0{
 			a:nth-child(3){
 				border-bottom: none;
@@ -239,7 +239,7 @@ header.site-header{
 				border-bottom: none;
 			}
 		}
-		
+
 		&.current-page-2{
 			a:nth-child(2){
 				border-bottom: 4px solid #57A3E8;
@@ -248,15 +248,15 @@ header.site-header{
 				border-bottom: none;
 			}
 		}
-		
+
 		@media (max-width: 750px){
 			overflow: hidden;
 			float: right;
 			margin: 0;
 			width: 100%;
 			border-bottom: 1px solid #ddd;
-			
-			a{	
+
+			a{
 				font-size: 1em;
 				display: block;
 				margin: 0;
@@ -269,7 +269,7 @@ header.site-header{
 				border-bottom: 1px solid #ddd;
 				padding-left: 22px;
 			}
-			
+
 			&.current-page-1{
 				a:nth-child(1){
 					border-left: 8px solid #57A3E8;
@@ -284,7 +284,7 @@ header.site-header{
 					padding-left: 30px;
 				}
 			}
-			
+
 			&.current-page-2{
 				a:nth-child(2){
 					border-left: 8px solid #57A3E8;
@@ -334,7 +334,7 @@ header.site-header{
 	margin-top: 180px;
 	margin-bottom: 0;
 	line-height: 1;
-	
+
 	@media (max-width: 1200px){
 		font-size: 5em;
 	}
@@ -374,7 +374,7 @@ h3.recent-work{
 	font-size: 2em;
 	letter-spacing: 5px;
 	position: relative;
-	
+
 	&:after{
 		position: absolute;
 		content: " ";
@@ -395,7 +395,7 @@ h3.recent-work{
 .light-blue-section div.max-width{
 	margin: 0 auto;
 	padding-top: 10px;
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'Raleway', sans-serif;
 }
 
 .light-blue-section p{
@@ -434,14 +434,14 @@ footer.max-width{
 
 
 .work-section{
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'Raleway', sans-serif;
 	.row{
 		[class*='col-']{
 			margin-top: 8rem;
 			@media (max-width: 750px){
-				margin-top: 4rem;	
+				margin-top: 4rem;
 			}
-			
+
 			h2{
 				font-size: 3.2em;
 				margin: 5rem 0 2rem;
@@ -450,13 +450,13 @@ footer.max-width{
 					margin-top: 0rem;
 				}
 				@media (max-width: 750px){
-					font-size: 2em;	
+					font-size: 2em;
 				}
 			}
 			p{
 				font-size: 1.2em;
 				@media (max-width: 750px){
-					font-size: 1em;	
+					font-size: 1em;
 				}
 			}
 			a{
@@ -470,7 +470,7 @@ footer.max-width{
 				margin-top: 0.5em;
 				margin-bottom: 2em;
 				transition: all 0.1s linear;
-				
+
 				&:hover{
 					background: rgba(0,0,0,0.2);
 				}
@@ -480,16 +480,16 @@ footer.max-width{
 				}
 			}
 		}
-		
+
 		img{
 			max-width: 90%;
 			display: block;
 			margin: 0rem auto 8rem auto;
 			max-height: 700px;
 			@media (max-width: 750px){
-				margin-bottom: 0;	
+				margin-bottom: 0;
 			}
-			
+
 			&.phone{
 				float: right;
 				margin: 0 15% 8rem 0;
@@ -499,7 +499,7 @@ footer.max-width{
 					float: none;
 				}
 			}
-		}	
+		}
 	}
 }
 
@@ -517,10 +517,10 @@ footer.max-width{
 			font-size:1.5em;
 		}
 	}
-	
+
 	.work-header-section{
 		margin-bottom: 3rem;
-		
+
 		img{
 			max-width: 90%;
 			display: block;
@@ -531,10 +531,10 @@ footer.max-width{
 			padding: 0;
 		}
 	}
-	
+
 	.work-item-page-content{
 		margin-bottom: 5em;
-		
+
 		.text-content{
 			font-family: 'Merriweather', serif;
 			max-width: 700px;
@@ -542,8 +542,8 @@ footer.max-width{
 			color: #333334;
 			line-height: 1.6;
 			padding-left: 15px;
-			padding-right: 15px; 
-			
+			padding-right: 15px;
+
 			.project-link{
 				background: #38a2d3;
 				color: #fff;
@@ -558,12 +558,12 @@ footer.max-width{
 				@media (max-width: 750px){
 					font-size:0.8em;
 				}
-				
+
 				&:hover{
 					opacity: 0.8;
 				}
 			}
-			
+
 			h3{
 				font-family: 'Raleway', sans-serif;
 				padding: 0;
@@ -576,7 +576,7 @@ footer.max-width{
 					font-size:1.5em;
 				}
 			}
-			
+
 			p{
 				@media (max-width: 750px){
 					font-size:0.8em;
@@ -588,34 +588,32 @@ footer.max-width{
 						color: #57A3E8;
 					}
 				}
-			
+
 			}
-			
+
 			figure{
 				max-width: 100%;
-				border: 1px #ddd solid; 
 				margin: 2em 0;
-				background-color: #888;
-				
+
 				a{
 					text-decoration: none;
 				}
-				
+
 				figcaption{
-					background: #ddd;
+					color: #777;
 					padding: 10px 10px;
-					font-size: 1.5rem;
-					font-style: italic;	
+					font-size: 1.3rem;
+					font-style: italic;
 				}
 			}
-			
+
 			img{
 				max-width: 100%;
 				margin-bottom: 0;
 				display: block;
 				margin: 0 auto;
 			}
-			
+
 			.back-to-work{
 				float: left;
 				display: block;
@@ -627,7 +625,7 @@ footer.max-width{
 				transition: 0.3 color linear;
 				transition: color ease 0.3s;
 				margin-top: 4em;
-				
+
 				&:hover{
 					color: #57A3E8;
 				}
@@ -646,7 +644,7 @@ footer.max-width{
 	font-family: 'Raleway', sans-serif;
 	background: #e3e3e3;
 	padding: 6rem 0 3rem;
-	
+
 	img{
 		max-width: 90%;
 		display: block;
@@ -657,7 +655,7 @@ footer.max-width{
 			padding: 0;
 		}
 	}
-	
+
 	.about-text{
 		font-size: 1.8rem;
 		@media (max-width: 750px){
@@ -682,12 +680,12 @@ footer.max-width{
 		color: #bababa;
 		font-size: 2rem;
 	}
-	
+
 	#lastfm dl:last-child, #lastfm dl:nth-child(2) {
 		visibility: hidden;
 		position: absolute;
 	}
-	
+
 	.listening{
 		@media (max-width: 750px){
 			margin-top: 1.6em;
@@ -738,9 +736,9 @@ footer.max-width{
 			}
 		}
 	}
-	
+
 	.reading{
-		
+
 		.reading-book{
 			width: 32%;
 			float: left;
@@ -755,10 +753,10 @@ footer.max-width{
 		.book-title{
 			font-weight: bold;
 			margin-bottom: 1em;
-			margin-top: 6%;	
+			margin-top: 6%;
 		}
 	}
-	
+
 	.tweeting{
 		@media (max-width: 750px){
 			margin-bottom: 0.4em;
@@ -796,7 +794,7 @@ footer.max-width{
 	background: #fff;
 	font-family: 'Raleway', sans-serif;
 	padding-top: 6rem;
-	
+
 	h4{
 		font-weight: 300;
 		text-align: center;
@@ -859,7 +857,7 @@ footer.max-width{
 			position: relative;
 			border-left:none;
 			padding-left: 0;
-			
+
 			@media (max-width: 750px){
 				font-size: 0.8em;
 			}
@@ -878,7 +876,7 @@ footer.max-width{
 				right: -1em;
 				font-size: 1em;
 			}
-		}		
+		}
 		figcaption{
 			font-size: 1em;
 			color: #333;
@@ -918,7 +916,7 @@ footer.max-width{
 		border-bottom: #EBF2F6 1px solid;
 		border-top: #EBF2F6 1px solid;
 		padding: 1.5em 20px 1em 20px;
-		
+
 		@media (max-width: 500px){
 			width: 300px;
 			text-align: center;
