@@ -12,6 +12,9 @@
         // for better relative/absolute positioning.
 
         //$("#blog-logo").prependTo("#site-head-content");
+        console.log("hello");
+
+        $(".post-content img").attr("data-action", "zoom");
 
     });
 
