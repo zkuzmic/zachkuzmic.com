@@ -1,0 +1,44 @@
+.hero h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 126px;
+	font-weight: 900;
+	text-align: center;
+	border-bottom: #bababa solid 4px;
+	padding-bottom: 0.15em;
+	margin-top: 140px;
+	margin-bottom: 0;
+	line-height: 1;
+
+	@media (max-width: 1200px){
+		font-size: 100px;
+	}
+	@media (max-width: 900px){
+		font-size: 80px;
+	}
+	@media (max-width: 750px){
+		font-size: 32px;
+		margin-top: 50px;
+		border-bottom: #bababa solid 1px;
+	}
+}
+
+.hero h2{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	color: #aaa;
+	margin-top: 0.4em;
+	margin-bottom: 300px;
+	line-height: 1;
+	@media (max-width: 1200px){
+		font-size: 28px;
+	}
+	@media (max-width: 750px){
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+.dark-text{
+	color: #333334;
+}
