@@ -2,138 +2,6 @@
  * Site header
  */
 
-// header.site-header{
-//     overflow: hidden;
-//     margin-top: 15px;
-//     margin-bottom: 15px;
-//     font-family: 'Raleway', sans-serif;
-//     position: relative;
-//     @media (max-width: 750px){
-//         padding: 0;
-//         margin-top: 0;
-//     }
-
-//     nav.main-nav{
-//         float: right;
-//         margin-top: 1.8em;
-//         line-height: 1;
-//         overflow: visible;
-
-//         a{
-//             text-decoration: none;
-//             color: #bababa;
-//             font-size: 1.2em;
-//             letter-spacing: 1px;
-//             font-weight: 700;
-//             line-height: 1;
-//             transition: color ease 0.3s;
-//             transition-property: color;
-//             transition-duration: 0.3s;
-//             transition-timing-function: ease;
-//             transition-delay: initial;
-//             margin-left: 55px;
-//             padding-bottom: 5px;
-
-//             &:hover{
-//                 color: #57A3E8;
-//             }
-
-//         }
-
-//         a:nth-child(3){
-//             border-bottom: 4px solid #57A3E8;
-//         }
-
-//         &.current-page-0{
-//             a:nth-child(3){
-//                 border-bottom: none;
-//             }
-//         }
-
-//         &.current-page-1{
-//             a:nth-child(1){
-//                 border-bottom: 4px solid #57A3E8;
-//             }
-//             a:nth-child(3){
-//                 border-bottom: none;
-//             }
-//         }
-
-//         &.current-page-2{
-//             a:nth-child(2){
-//                 border-bottom: 4px solid #57A3E8;
-//             }
-//             a:nth-child(3){
-//                 border-bottom: none;
-//             }
-//         }
-
-//         @media (max-width: 750px){
-//             overflow: hidden;
-//             float: right;
-//             margin: 0;
-//             width: 100%;
-//             border-bottom: 1px solid #ddd;
-
-//             a{
-//                 font-size: 1em;
-//                 display: block;
-//                 margin: 0;
-//                 padding: 10px 30px;
-//                 border-bottom: 1px solid #ddd;
-//             }
-
-//             a:nth-child(3){
-//                 border-left: 8px solid #57A3E8;
-//                 border-bottom: 1px solid #ddd;
-//                 padding-left: 22px;
-//             }
-
-//             &.current-page-1{
-//                 a:nth-child(1){
-//                     border-left: 8px solid #57A3E8;
-//                     padding-left: 22px;
-//                     border-bottom: none;
-//                 }
-//                 a:nth-child(2){
-//                     border-top: 1px solid #ddd;
-//                 }
-//                 a:nth-child(3){
-//                     border-left: none;
-//                     padding-left: 30px;
-//                 }
-//             }
-
-//             &.current-page-2{
-//                 a:nth-child(2){
-//                     border-left: 8px solid #57A3E8;
-//                     border-bottom: none;
-//                     padding-left: 22px;
-//                 }
-//                 a:nth-child(3){
-//                     border-left: none;
-//                     border-top: 1px solid #ddd;
-//                     padding-left: 30px;
-//                 }
-//             }
-//         }
-//     }
-//     .nav-toggle{
-//         position: static;
-//         float: right;
-//         width: 30px;
-//         height: 30px;
-//         margin: 10px 15px 0 0;
-//         img{
-//             width: 100%;
-//         }
-//     }
-// }
-
-// .logo h1:hover{
-//     color: #57A3E8;
-// }
-
 .site-header {
     //min-height: 56px;
     overflow: hidden;
@@ -141,19 +9,6 @@
     // Positioning context for the mobile navigation icon
     position: relative;
 }
-
-// .site-title {
-//     font-size: 26px;
-//     line-height: 56px;
-//     letter-spacing: -1px;
-//     margin-bottom: 0;
-//     float: left;
-
-//     &,
-//     &:visited {
-//         color: $grey-color-dark;
-//     }
-// }
 
 .logo {
     float: left;
@@ -228,6 +83,7 @@ nav.main-nav{
     a{
         text-decoration: none;
         color: #bababa;
+        display: inline-block;
         font-size: 24px;
         letter-spacing: 1px;
         font-weight: 700;
@@ -340,68 +196,42 @@ nav.main-nav{
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    text-align: center;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.dark-section{
+    background: #333;
+    color: #fff;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
+.site-footer .fa{
+    color: #fff;
+    font-size: 45px;
+    margin: 0 8px;
+    transition: all 100ms ease-out;
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+    &.fa-twitter:hover{
+        color: #00aced;
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    &.fa-instagram:hover{
+        color: #9b6954;
+    }
+
+    &.fa-linkedin-square:hover{
+        color: #007bb6;
+    }
+
+    &.fa-soundcloud:hover{
+        color: #ff3a00;
     }
 }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.site-footer p{
+    color: #777;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 
@@ -410,7 +240,7 @@ nav.main-nav{
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    //padding: $spacing-unit 0;
 }
 
 .page-heading {
@@ -456,7 +286,7 @@ nav.main-nav{
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    //margin-bottom: $spacing-unit;
 
     h2 {
         font-size: 32px;
