@@ -3,7 +3,7 @@ title: Zach Kuzmic - User Experience Designer in Austin, Texas
 email: zachkuzmic@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Zach is a UX Designer based in Austin, Texas who specializes in application and product design. He also does some front-end development and makes music in his free time.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/zachkuzmic.com/" # the subpath of your site, e.g. /blog/
 url: "http://zachkuzmic.com" # the base hostname & protocol for your site
 twitter_username: zkuzmic
 github_username:  zkuzmic
