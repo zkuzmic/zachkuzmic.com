@@ -55,7 +55,7 @@
 				text-decoration: none;
 				font-size: 30px;
 				padding: 10px 25px;
-				margin-top: 0;
+				margin-top: 20px;
 				display: inline-block;
 				transition: 0.1s linear all;
 				@media (max-width: 750px){
@@ -83,11 +83,8 @@
 			p{
 
 				a{
-					color: #333334;
+					color: #57A3E8;
 					transition: 0.3s linear all;
-					&:hover{
-						color: #57A3E8;
-					}
 				}
 
 			}
