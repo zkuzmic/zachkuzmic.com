@@ -6,9 +6,7 @@ group: "navigation"
 weight: 3
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">blog</h1>
+<div class="blog">
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -18,6 +16,7 @@ weight: 3
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <p class="post-excerpt"> {{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>

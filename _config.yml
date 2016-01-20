@@ -10,3 +10,6 @@ github_username:  zkuzmic
 
 # Build settings
 markdown: kramdown
+
+#permalinks
+permalink: /blog/:title

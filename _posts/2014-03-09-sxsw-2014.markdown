@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "SXSW 2014"
+date:   2014-03-09 12:21:04
+categories: blog
+---
+I'm lucky enough to have been given a platinum badge by Pearson, the company I work for, and felt like I should keep a little journal of the experiences I'm having as I navigate the beast that is South by Southwest for the first time. Each day of the conference, I'll update this post with what I did that day and some of things I was able to take away from it.
+
+***
+
+#####Day 1: Friday, March 7
+
+So it begins. Today was an incredibly hectic day. I planned on attending about five panels/discussions but was only able to make it to two due to transportation between the Austin Convention Center, Long Center, and other venues. One lesson to be had from today is to allow more time to get from point A to point B. We all know traffic in Austin is bad, but that is very much amplified during SXSW.
+
+The most interesting discussion I attended today was with [Eric Schmidt](http://en.wikipedia.org/wiki/Eric_Schmidt) and [Jared Cohen](http://en.wikipedia.org/wiki/Jared_Cohen) of Google talking about human rights, civic relationships, and how they relate to the internet. It was a fascinating discussion about the role the internet can play in diplomacy and what sort of political issues it's dealing with and may deal with down the road.
+
+After the daytime events, I was able to attend parties at [Idean](http://www.idean.com/) and [Capital Factory](http://capitalfactory.com/) where I talked with so many talented designers, developers, and others in our field. It was great to see their (beautiful) spaces and talk to them about some of their experiences and what they've been up to lately.
+
+#####Day 2: Saturday, March 8
+
+The discussion with astrophysicist [Neil deGrasse Tyson](http://en.wikipedia.org/wiki/Neil_deGrasse_Tyson) today was my favorite event by far. It was equal parts informative and inspirational. While not the most directly related topic to what I do (I only deal so much with the cosmos in my day job as an interaction designer), I was able to take away a "cosmic perspective" of our world that speaks to staying curious, questioning everything, and doing things for the greater good. Very inspiring. 
+
+#####Day 3: Sunday, March 9
+
+The day started with NASA UXers [Steve Hillenius](https://twitter.com/Hillenius) and [Sam Hashemi](https://twitter.com/oksamuel) showing a handful of their work including mission planning software, link operation (moving those giant satellites that talk to probes in deep space), and a program for viewing and organizing content/data collected by the Mars rover ("Pinterest for Scientists" as they called it). Some childhood dream of mine was fulfilled looking at these astronaut interfaces and hearing about their conception. At the end of their talk, Steve and Sam showed us their checklist of the four characteristics all new NASA software should have:
+
+1. visual
+2. inviting
+3. inventive
+4. tells a story
+
+I love that storytelling is on this list.
+
+Later in the day, [WIRED](http://t.co/8JKBqw8VpR) Articles Director for Design [Cliff Kuang](https://twitter.com/cliffkuang) gave a talk on interaction design for the post-screen world. He talked about how devices need an awareness of how people live and how that can help us further collaborate with technology. My favorite line from Cliff's talk:
+
+>UX isn’t just speed. It’s context.
+
+Awesome. Sure, good UX can help users do things faster, but it isn't all about speed. User experience is about helping people accomplish their goals. Things like Google Now are taking the user's context and offering them relevant information based on what it thinks they want or are going to do next. Some are referring to this as "predictive computing".
+
+It sounds like we're making progress towards building the operating system from [Her](http://www.imdb.com/title/tt1798709/).
+
+#####Day 4: Monday, March 10
+
+Today was a total blur. I made it to an interesting session midday by [Eric Swayne](https://twitter.com/eswayne) about telling stories through data. One of his major points was that although a set of data may be important, without the proper insight or visual presentation, its value might not be understood by your audience. Eric touched on some principles/techniques including [Fitt's Law](http://en.wikipedia.org/wiki/Fitts's_law) and getting to know your users' biases.
+
+Later, I made it to Stubb's to see [Girl Talk](https://twitter.com/girltalk) with a few pals I studied design with at OU: [Skye Gould](https://twitter.com/skyegould), [Alex Martinez](https://twitter.com/alx_mrtnz), and [Jered Marshall](https://twitter.com/RedMarsh5). Good times!
+
+#####Day 5: Tuesday, March 11
+
+The last day of Interactive. Has it really been five days already? I guess time flies when you're having fun.
+
+Today, I attended Chelsea Clinton's keynote, which felt pretty dry to me. She talked about some pretty serious issues (which I can certainly appreciate), but it just lacked the motivational "let's go change the world" feeling I got from Neil deGrasse Tyson's keynote on day two.
+
+I also went to a panel called "Sound Design for Web Content" that dealt with creating audio for online video. One of the panelists, [Glenn Kiser](http://www.imdb.com/name/nm0457159/) was from Dolby, and he talked about how they're leaning on YouTube to implement a 5.1 option for online videos. It sounds cool, but how many people really have a surround system attached to internet-ready devices? I'm sure that number is growing as Apple TVs and Roku boxes become more popular, but it might take a little more demand before YouTube adds the feature.
+
+***
+
+###In Summary
+
+SXSW was absolutely incredible. It was mentally and physically exhausting to be sure, but between the panels and getting to meet *so* many other talented people in our industry, it was well worth it. I'd do it all over again in a heartbeat and am already giddy with excitement for next year.
