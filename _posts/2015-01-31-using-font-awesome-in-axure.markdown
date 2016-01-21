@@ -16,13 +16,13 @@ Here’s how to start using Font Awesome in your Axure wireframes:
 
 ###Step 1: Download and install Font Awesome on your machine
 
-Here: http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.3.0.zip
+Here: [https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip](https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip)
 
 Unzip it, go into the “fonts” folder and double-click the appropriate font file to install it (*FontAwesome.otf* on OSX).
 
 ###Step 2: Add Font Awesome to your Web Fonts
 
-Copy this link: http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+Copy this link: [https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css](https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
 
 In Axure, go to *Publish > Generate HTML Files…* and navigate to the *Web Fonts* section.
 
