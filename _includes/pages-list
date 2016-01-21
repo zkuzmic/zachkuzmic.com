@@ -2,8 +2,12 @@
   {% if group == null or group == node.group %}
     {% if page.url == node.url %}
       <a href="{{node.url}}" class="active">{{node.title}}</a>
+    {% elsif page.url contains "/blog/" and node.url contains "/blog/" %}
+      <a href="{{node.url}}" class="active">{{node.title}}</a>
+    {% elsif page.url contains "/work/" and node.url == "/" %}
+      <a href="{{node.url}}" class="active">{{node.title}}</a>
     {% else %}
-      <a href="{{node.url}}">{{node.title}}</a>
+      <a href="{{node.url}}" class="{{page.url}} {{node.url}}">{{node.title}}</a>
     {% endif %}
   {% endif %}
 {% endfor %}
