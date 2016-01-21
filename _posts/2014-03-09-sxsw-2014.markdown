@@ -3,6 +3,7 @@ layout: post
 title:  "SXSW 2014"
 date:   2014-03-09 12:21:04
 categories: blog
+excerpt: I'm lucky enough to have been given a platinum badge to South by Southwest and felt like I should keep a little journal of the experiences I'm having during my first time at the conference.
 ---
 I'm lucky enough to have been given a platinum badge by Pearson, the company I work for, and felt like I should keep a little journal of the experiences I'm having as I navigate the beast that is South by Southwest for the first time. Each day of the conference, I'll update this post with what I did that day and some of things I was able to take away from it.
 

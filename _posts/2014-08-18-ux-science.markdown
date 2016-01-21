@@ -3,6 +3,7 @@ layout: post
 title:  "UX = Science"
 date:   2014-08-18 12:21:04
 categories: blog
+excerpt: As user experience professionals we use (or should be using) the scientific method – we build hypotheses, test them, analyze the results, and draw conclusions. It’s how we prove whether our design solutions are achieving their goals.
 ---
 Think back to elementary school when you first learned about the scientific method. Here it is for those needing a refresher:
 

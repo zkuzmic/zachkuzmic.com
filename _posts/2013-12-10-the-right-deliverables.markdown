@@ -3,6 +3,7 @@ layout: post
 title:  "The Right Deliverables"
 date:   2013-12-10 12:21:04
 categories: blog
+excerpt: A huge part of being a designer is creating deliverables. They are a means for us to communicate our ideas on how a product should work/look/feel to clients, stakeholders, developers, and other team members. If used properly, they can be an extremely effective and efficient way to convey your designs. But not all deliverables exist for the greater good.
 ---
 A huge part of being a designer is creating deliverables. They are a means for us to communicate our ideas on how a product should work/look/feel to clients, stakeholders, developers, and other team members. If used properly, they can be an extremely effective and efficient way to convey your designs.
 

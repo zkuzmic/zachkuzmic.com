@@ -6,6 +6,14 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Raleway', Helvetica, sans-serif;
 	}
+
+	h1 {
+		line-height: 60px;
+	}
+
+	h2 {
+		line-height: 48px;
+	}
 }
 
 .post-list {
@@ -49,9 +57,12 @@ a.post-link{
 		font-size: 50px;
 	}
 
+	h4 {
+		font-size: 30px;
+	}
+
 	h5 {
 		font-size: 25px;
-		line-height: 25px;
 	}
 
 	.post-content {
@@ -60,6 +71,19 @@ a.post-link{
 
 		p, ul, ol {
 			margin: 32px 0;
+
+			li {
+				list-style-position: inside;
+				margin-bottom: 5px;
+				padding-left: 20px;
+				text-indent: -20px;
+			}
+		}
+
+		hr {
+			border-top: #EBF2F6 1px solid;
+			border-left: none;
+			border-bottom: none;
 		}
 
 		figure{
@@ -86,7 +110,7 @@ a.post-link{
 
 .post-footer {
     position: relative;
-    margin: 80px 0 80px 0;
+    margin: 40px 0 80px 0;
     padding: 40px 0 80px 0;
 
 	.wrapper{

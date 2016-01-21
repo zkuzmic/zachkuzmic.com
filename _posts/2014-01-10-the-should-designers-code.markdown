@@ -3,6 +3,7 @@ layout: post
 title:  "Should desginers code?"
 date:   2014-01-20 12:21:04
 categories: blog
+excerpt: Doesn't everyone in the tech industry need to write this article at least once?
 ---
 Yes. Yes, they absolutely should. 
 

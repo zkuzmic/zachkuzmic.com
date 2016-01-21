@@ -3,6 +3,7 @@ layout: post
 title:  "I Installed Ghost"
 date:   2013-11-02 12:21:04
 categories: blog
+excerpt: I just installed Ghost today. There are still some kinks to work out, and it's not pretty yet... but it's here.
 ---
 I just installed [Ghost](http://ghost.org/) today. There are still some kinks to work out, and it's not pretty yet... but it's here.
 

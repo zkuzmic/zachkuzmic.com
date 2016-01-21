@@ -3,6 +3,7 @@ layout: post
 title:  "Second"
 date:   2013-11-20 12:21:04
 categories: blog
+excerpt: I'm actually writing a second post... this is probably the first time this has happened on a blog I've started. It's a big deal.
 ---
 Nice. It's a second post. 
 
