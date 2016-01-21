@@ -2,6 +2,8 @@
 	font-family: 'Merriweather', serif;
 	margin: 40px auto;
 	max-width: 700px;
+	padding-left: 15px;
+	padding-right: 15px;
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Raleway', Helvetica, sans-serif;
@@ -33,28 +35,45 @@
 
 a.post-link{ 
 	color: #50585D;
-	font-size: 40px;
+	font-size: 30px;
+	line-height: 33px;
+	text-decoration: none;
 }
 
 .post-excerpt {
 	font-size: 18px;
+
+	@media (max-width: 500px){
+		font-size: 16px;
+	}
 }
 
 .post a {
 	transition: color ease 0.3s;
 
 	&:hover {
-		color: #57A3E8;
-		text-decoration: none;
+		color: $brand-color;
 	}
 }
 
 //post page specific stuff
-.post-page {
+.post-page.post {
 
 	h1{
 		color: #3A4145;
 		font-size: 50px;
+
+		@media (max-width: 500px){
+			font-size: 30px;
+			line-height: 33px;
+		}
+	}
+
+	h2 {
+		@media (max-width: 500px){
+			font-size: 24px;
+			line-height: 26px;
+		}	
 	}
 
 	h4 {
@@ -68,6 +87,11 @@ a.post-link{
 	.post-content {
 		font-size: 20px;
 		line-height: 32px;
+
+		@media (max-width: 500px){
+			font-size: 16px;
+			line-height: 25.6px;
+		}
 
 		p, ul, ol {
 			margin: 32px 0;

@@ -2,16 +2,19 @@
 	h2{
 		font-family: 'Raleway', sans-serif;
 		font-size: 100px;
+		line-height: 120px;
 		text-align: center;
 		margin: 0;
 		padding: 30px 0;
 
 		@media (max-width: 900px){
 			font-size: 80px;
+			line-height: 96px;
 		}
 
 		@media (max-width: 750px){
 			font-size: 30px;
+			line-height: 36px;	
 		}
 	}
 
@@ -83,7 +86,7 @@
 			p{
 
 				a{
-					color: #57A3E8;
+					
 					transition: 0.3s linear all;
 				}
 
