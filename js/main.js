@@ -19,8 +19,19 @@ $(function() {
 				//Done
 			}
 		});
+
+		var fetcherConfig = {
+			"id": '421865475010600961',
+			"domId": 'tweet',
+			"maxTweets": 1,
+			"enableLinks": true,
+			"showUser": false,
+			"showTime": true,
+			"showRetweet": false,
+			"showInteraction": false
+		};
 	
-		twitterFetcher.fetch('421865475010600961', 'tweet', 1, true, false, true, undefined, false, undefined, false);
+		twitterFetcher.fetch(fetcherConfig);
 	}
 
 });

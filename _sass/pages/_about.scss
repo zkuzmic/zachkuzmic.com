@@ -129,6 +129,7 @@
 			float: left;
 			border: 1px solid #ddd;
 		}
+
 		.book-title, .book-author{
 			margin: 0 5% 0 3%;
 			float: left;
@@ -142,43 +143,69 @@
 		.book-author{
 			font-size: 13px;
 		}
+		
 		.book-title{
 			font-weight: bold;
 			margin-top: 6%;
 		}
+
 	}
 
 	.tweeting{
+		
 		@media (max-width: 750px){
 			margin-bottom: 4px;
 		}
+		
 		#tweet{
 			margin-top: 10px;
 			padding-right: 10%;
+
 			ul{
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
+
 				li{
 					font-size: 15px;
+
 					.tweet{
 						margin: 0;
+						margin-bottom: 12px;
+
 						a{
 							color: #333334;
+
 							&:hover{
 								color: #57A3E8;
 							}
+
 						}
+
 					}
+
 					.timePosted{
-						font-size: 13px;
-						font-style: italic;
-						color: #bbb;
+						font-size: 12px;
+
+						a {
+							color: #bababa;	
+							text-decoration: none;
+
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+						
 					}
+
 				}
+
 			}
+
 		}
+
 	}
+
 }
 
 .contact{
@@ -196,6 +223,7 @@
 			font-size: 16px;
 		}
 	}
+
 	h5{
 		text-align: center;
 		margin-top: 4px;
