@@ -9,7 +9,7 @@ A huge part of being a designer is creating deliverables. They are a means for u
 
 But not all deliverables exist for the greater good. Don't be a slave to the deliverable and some predefined process. Just because other projects required a certain set of documents doesn't mean that all projects should. Creating deliverables for the hell of it wastes your time and isn't helpful in moving your project forward. As a designer, you should assess the needs of your project and create a deliverable that will speak directly to those needs.
 
-###Don't just create deliverables. Create the *right* deliverables.
+## Don't just create deliverables. Create the *right* deliverables.
 
 
 Let's use wireframes as an example. Wireframing is a crucial step in the process of creating a website or app. This we know. They're the first visualization of your new product and the foundation the rest of your team (developers, visual designers, and everyone in between) will be working from. 

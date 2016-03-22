@@ -11,7 +11,7 @@ The basic idea is that you have a system where every single one of your TO-DOs (
 
 Without going into too much detail (I’ll let the course do that), here are a few of the tools/processes I rely on most in my Getting Things Done (GTD) workflow:
 
-###Things
+## Things
 
 <figure>
   <img data-action="zoom" src="/img/blog/getting-things-done/things_for_mac.png" alt="Things for Mac">
@@ -28,7 +28,7 @@ This is the bread and butter of my productivity workflow. It integrates seamless
 
 The one drawback to Things is the price. The Mac app can be yours for a cool $50, and the iOS will run you another $10. To me, it’s money well spent. You get what you pay for.
 
-###Evernote
+## Evernote
 
 <figure>
   <img data-action="zoom" src="/img/blog/getting-things-done/evernote.png" alt="Evernote OSX app">
@@ -44,7 +44,7 @@ I have become an Evernote power user over the past year. Creating notebooks for 
    * **Business card scanning.** This is also a premium feature. I can scan in business cards and automatically add them to my contacts or add them on LinkedIn. No more having to save the stupid card.
    * **Everything is searchable and easy to find.** I used to have to scan through physical notebook pages to find a particular note or rifle through a filing cabinet in search of certain documents. No more. *(I will note here that I still do own a filing cabinet for certain documents, but I keep it to an absolute minimum.)*
 
-###Inbox Zero (Gmail/Mailbox)
+## Inbox Zero (Gmail/Mailbox)
 
 <figure>
   <img data-action="zoom" src="/img/blog/getting-things-done/gmail_mailbox.png" alt="Gmail and Mailbox">

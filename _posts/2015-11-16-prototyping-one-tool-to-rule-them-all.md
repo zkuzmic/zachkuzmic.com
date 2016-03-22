@@ -28,7 +28,7 @@ The answer is…
 
 It depends.
 
-##Pick Any Two
+## Pick Any Two
 
 All of the tools listed above are fine products, but they all go about prototyping in slightly different ways. Some excel in certain areas but might be lacking in others. Alas, the perfect, holy grail of prototyping tools continues to elude us.
 
@@ -47,7 +47,7 @@ For prototyping tools, we think there is another “Pick any two” scenario bet
 </figure>
 
 
-##What We Settled On
+## What We Settled On
 
 In the end, we've come to the realization that there isn’t a perfect tool for us that we could use on all projects. Instead, we’ve come to the conclusion that certain tools help us achieve better results in certain scenarios. If we are creating a highly detailed spec to be delivered to a client, we might use a combination of a Keynote presentation that contains comps from Sketch as well as small prototypes created with Framer (this would be a high fidelity, high interactivity approach). If we’re creating a prototype for internal usage we might go with a simple Axure prototype with a few clickable / interactive elements (this would be a fast, high interactivity approach).
 

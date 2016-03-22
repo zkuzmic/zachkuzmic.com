@@ -14,13 +14,13 @@ excerpt: Font Awesome is a great way to get icons into your Axure documents. The
 
 Here’s how to start using Font Awesome in your Axure wireframes:
 
-###Step 1: Download and install Font Awesome on your machine
+## Step 1: Download and install Font Awesome on your machine
 
 Here: [https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip](https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip)
 
 Unzip it, go into the “fonts” folder and double-click the appropriate font file to install it (*FontAwesome.otf* on OSX).
 
-###Step 2: Add Font Awesome to your Web Fonts
+## Step 2: Add Font Awesome to your Web Fonts
 
 Copy this link: [https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css](https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
 
@@ -38,7 +38,7 @@ Here, click the green “+” icon to add a web font, add the font name, and pas
 
 Now that you've added it as a Web Font, it will render properly when you publish and share to people on other machines (even if they don't have Font Awesome installed).
 
-###Step 3: Copy/paste icons into your document
+## Step 3: Copy/paste icons into your document
 
 Go to the Font Awesome Cheatsheet (keep this bookmarked since you’ll need it every time you want a new icon): http://fortawesome.github.io/Font-Awesome/cheatsheet/
 

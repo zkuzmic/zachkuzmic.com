@@ -9,7 +9,7 @@ Last week, my portfolio site was featured on UX Mastery’s list of [10 Inspirin
 
 Below, I'll cover some of the most important points to keep in mind as you create your own UX portfolio.
 
-####Always start with your audience in mind
+## Always start with your audience in mind
 
 This is how I would start any project. Whether I’m working on something as small as a portfolio site or something as large as a redesign for a higher-ed institution, I always start with the same question: “Who am I building this for?”
 
@@ -22,11 +22,11 @@ In this case, your target audience is employers. More specifically, employers wh
 
 These are all things you want your portfolio to address in some manner. We'll get into some of the details on how to do this below.
 
-####Less is More
+## Less is More
 
 In terms of the number of projects you should include on your site, *quality is more important than quantity*. It’s better to include three projects that you are extremely proud of rather than providing links to every project you’ve touched in the last year, big or small. From my experience being on the hiring side of things, employers aren’t going to spend hours on your site digging through your work to see if you are a fit. They just want to see what you’re capable of, and they don’t want to spend a lot of time doing it.
 
-####Describe your process
+## Describe your process
 
 Employers don’t just want to see a list links to finished projects that you had some part in creating. A link to a website or app is worthless to a potential employer unless you provide some context. Talk about what parts you had a hand in, what your approach was, and what issues you encountered along the way. This is the stuff employers care about. They want to know how you work.
 
@@ -36,13 +36,13 @@ Another way to describe your process is to blog. Write about how you approach ce
 
 Thoughtful, well-written blog posts will also show that you are passionate about your work. The fact that you are taking time out of your normal responsibilities to create content about UX design will show that you legitimately care about your profession.
 
-####Add a personal touch
+## Add a personal touch
 
 
 Don’t be afraid to show your personality on your portfolio site. Some might be hesitant to reveal who they really are online as not to scare away potential employers, but when you really think about it, would you want to work anywhere that would react badly to you just being yourself? I wouldn’t.
 
 
-####Launch it
+## Launch it
 
 
 The biggest, most important part of making a portfolio site is that you actually launch it. Put it on the internet. It doesn’t matter how “finished” you think it is, you have to get something online. Start small. You’ll have time to iterate and improve it as time goes on.
