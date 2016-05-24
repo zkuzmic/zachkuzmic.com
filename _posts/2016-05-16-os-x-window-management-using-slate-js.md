@@ -3,7 +3,7 @@ layout: post
 title:  "OS X Window Management Using Slate.js"
 date:   2016-05-16 17:30:00
 categories: blog
-excerpt: A couple of years ago, I started looking into various window management solutions for OS X(there are a lot out there from what I can tell), and eventually landed on Slate due to its high customizability. It’s a little more complicated to configure than others (via a .js file as opposed to a GUI), but well worth it.
+excerpt: A couple of years ago, I started looking into various window management solutions for OS X (there are a lot out there from what I can tell), and eventually landed on Slate due to its high customizability. It’s a little more complicated to configure than others (via a .js file as opposed to a GUI), but well worth it.
 ---
 
 As a designer, it probably comes as no surprise that I’m sort of an Apple fanboy. OS X is way more usable (and stable) than Windows in my experience, but I’ve always thought it was hard to wrangle (resize, reposition) windows. I don’t really like going into fullscreen mode via the circular green button in the corner and clicking / dragging to resize windows is cumbersome.
