@@ -10,9 +10,9 @@ Accessibility is obviously important. Instead of making one big “this better p
 
 ## Installing the plugin
 
-*Option 1:* Search for "Color Contrast Analyser" using the [Sketch Toolbox](http://sketchtoolbox.com/) app (if you don’t already have it installed, I highly recommend it — it’s great at managing Sketch plugins).
+**Option 1:** Search for "Color Contrast Analyser" using the [Sketch Toolbox](http://sketchtoolbox.com/) app (if you don’t already have it installed, I highly recommend it — it’s great at managing Sketch plugins).
 
-*Option 2:* Mosey over to the plugin’s [Github page](https://github.com/getflourish/Sketch-Color-Contrast-Analyser) and download the ZIP file. Unzip it and move the whole folder into `~/Library/Application Support/com.bohemiancoding.sketch3/Plugins` like so:
+**Option 2:** Mosey over to the plugin’s [Github page](https://github.com/getflourish/Sketch-Color-Contrast-Analyser) and download the ZIP file. Unzip it and move the whole folder into `~/Library/Application Support/com.bohemiancoding.sketch3/Plugins` like so:
 
 <figure>
   <img data-action="zoom" src="/img/blog/2017-09-25-accessibility/plugins-folder.png" alt="Sketch Plugins folder">
@@ -20,7 +20,7 @@ Accessibility is obviously important. Instead of making one big “this better p
 
 ## Using the plugin
 
-You may have to restart Sketch before you can see the plugin. Once you do, create a text layer on top of a colored background layer (a rectangle, or any other shape). Select both layers and then go to `Plugins > Color Contrast Analyser` at the top of the page.
+You may have to restart Sketch before you can see the plugin. Once you do, create a text layer on top of a colored background layer (a rectangle, or any other shape). Select **both** layers and then go to `Plugins > Color Contrast Analyser` at the top of the page.
 
 <video controls loop autoplay class="full-width-video">
   <source src="/img/blog/2017-09-25-accessibility/contrast-analyser.mp4" type="video/mp4">
