@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Cursor pointer on checkbox and radio inputs
-date:   2017-09-25 12:00:00
+date:   2018-02-27 12:00:00
 categories: blog
 excerpt: Should checkboxes and radio buttons get a "pointer" cursor when the user hovers them with their mouse? The Chrome default is no, but not everyone agrees.
 ---
