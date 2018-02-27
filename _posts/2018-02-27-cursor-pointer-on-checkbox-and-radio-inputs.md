@@ -14,4 +14,4 @@ With the modern convention being that all links and buttons get a pointer when h
 
 I think it comes down to what is being communicated with a pointer. Is it just saying "clicking here will do something"? Or is it saying "clicking here will do something *because that isn't already made obvious with some other affordance*"?
 
-For now, there seems to be some consensus on the latter (buttons get a pointer, checkboxes and radio buttons do not). But I also understand the argument for consistency (all clickable elements get a pointer)with the former. I'm not sure I have a true preference. My only thought on the matter is that any website or app should pick a direction and implement that consistently throughout their entire product.
+For now, there seems to be some consensus on the latter (where buttons get a pointer, checkboxes and radio buttons do not). But I also understand the former's argument for consistency (where all clickable elements get a pointer). I'm not sure I have a true preference to be honest. My only thought on the matter is that any website or app should pick a direction and implement that consistently throughout their entire product.
