@@ -5,6 +5,14 @@ module.exports = {
     author: `Zach Kuzmic`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Righteous', 'Merriweather']
+        }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

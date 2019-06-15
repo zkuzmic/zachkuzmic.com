@@ -21,10 +21,13 @@ const IndexPage = ({data}) => (
     <div style={{
       display: 'flex',
       alignItems: 'center',
+      borderBottom: '1px solid rgba(0,0,0,0.1)',
+      paddingBottom: '30px'
     }}>
       <div style={{ marginRight: '30px' }}>
-        <h1>Good day,</h1>
-        <p>My name is Zach Kuzmic, and I and I am a Front End Developer with a background in User Experience Design.</p>
+        <h1 style={{ marginBottom: '1rem' }}>Good day,</h1>
+        <p style={{ fontSize: '18px' }}>I'm Zach Kuzmic, a Front End Developer with a background in User Experience Design, currently working at athenahealth in Austin, TX.</p>
+        <p style={{ fontSize: '18px' }}>In my spare time, I like to make music, do woodworking, and watch sports. I'm from Ohio and probably care too much about the Cleveland Indians.</p>
       </div>
       <div style={{
         flexBasis: '485px',
