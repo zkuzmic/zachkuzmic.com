@@ -10,12 +10,9 @@ const WordHighlight = (props) => {
 
   const style = selectedId === id
     ? {
-      borderRadius: '4px',
-      padding: '2px 3px',
-      margin: '0 -3px',
-      background: '#20407A',
-      color: '#A9E4FF',
-      textShadow: '1px 0 3px #98FAF1'
+      color: '#B91D1D',
+      textShadow: '0 0 4px rgba(255, 172, 172, 0.6)',
+      animation: 'colorPulse 1s infinite linear alternate',
     }
     : {}
 

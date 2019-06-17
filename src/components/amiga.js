@@ -5,6 +5,7 @@ import reactLogo from '../images/react.svg';
 
 // Amiga screens
 import Athena from '../components/amigaScreens/athena';
+import Austin from '../components/amigaScreens/austin';
 import Zach from '../components/amigaScreens/zach';
 
 const screenPositioningStyles = {
@@ -55,6 +56,9 @@ export default (props) => (
           break;
         case 'wh-zach':
           CurrentScreen = Zach;
+          break;
+        case 'wh-austin':
+          CurrentScreen = Austin;
           break;
         default:
           CurrentScreen = DefaultScreen;

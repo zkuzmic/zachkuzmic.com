@@ -18,7 +18,8 @@ class HeroText extends React.Component {
         <h1 style={{ marginBottom: '1rem' }}>Hello,</h1>
         <p style={{ fontSize: '18px' }}>
           I'm <WordHighlight {...wordHighlightProps} id="wh-zach">Zach Kuzmic</WordHighlight>,
-          a Front End Developer with a background in User Experience Design, currently working at <WordHighlight {...wordHighlightProps} id="wh-athena">athenahealth</WordHighlight> in Austin, TX.
+          a Front End Developer with a background in User Experience Design, currently working
+          at <WordHighlight {...wordHighlightProps} id="wh-athena">athenahealth</WordHighlight> in <WordHighlight {...wordHighlightProps} id="wh-austin">Austin, TX</WordHighlight>.
         </p>
         <p style={{ fontSize: '18px' }}>
           In my spare time, I like to make music, do woodworking, and watch sports. I'm from
