@@ -1,0 +1,11 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'animations.scss';
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', sans-serif;
+}
