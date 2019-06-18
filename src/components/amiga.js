@@ -6,6 +6,11 @@ import reactLogo from '../images/react.svg';
 // Amiga screens
 import Athena from '../components/amigaScreens/athena';
 import Austin from '../components/amigaScreens/austin';
+import Music from '../components/amigaScreens/music';
+import Ohio from '../components/amigaScreens/ohio';
+import Slider from '../components/amigaScreens/slider';
+import Sports from '../components/amigaScreens/sports';
+import Wood from '../components/amigaScreens/wood';
 import Zach from '../components/amigaScreens/zach';
 
 const screenPositioningStyles = {
@@ -59,6 +64,21 @@ export default (props) => (
           break;
         case 'wh-austin':
           CurrentScreen = Austin;
+          break;
+        case 'wh-wood':
+          CurrentScreen = Wood;
+          break;
+        case 'wh-ohio':
+          CurrentScreen = Ohio;
+          break;
+        case 'wh-music':
+          CurrentScreen = Music;
+          break;
+        case 'wh-sports':
+          CurrentScreen = Sports;
+          break;
+        case 'wh-indians':
+          CurrentScreen = Slider;
           break;
         default:
           CurrentScreen = DefaultScreen;

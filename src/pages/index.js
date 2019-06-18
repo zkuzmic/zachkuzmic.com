@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout includeHeader={false}>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Zach Kuzmic - Home" keywords={[`Zach Kuzmic`, `Front End Engineer`, `UX`, `Design`, `react`]} />
         <div style={{
           display: 'flex',
           alignItems: 'center',
