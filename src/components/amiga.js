@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from "gatsby";
 import Img from 'gatsby-image';
 import reactLogo from '../images/react.svg';
+import { Mobile } from '../components/screenSizes';
 
 // Amiga screens
 import Athena from '../components/amigaScreens/athena';
@@ -24,19 +25,20 @@ const screenPositioningStyles = {
 
 const DefaultScreen = () => (
   <div style={{
-      alignItems: 'center',
-      display: 'flex',
-      width: '100%',
-      height: '100%',
-    }}>
-      <img
-        src={reactLogo}
-        alt="React"
-        style={{
-          animation: 'spin 18s linear infinite',
-          margin: '0',
-          width: '100%'
-        }} />
+    alignItems: 'center',
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+  }}>
+    <img
+      src={reactLogo}
+      alt="React"
+      style={{
+        animation: 'spin 18s linear infinite',
+        margin: '0',
+        width: '100%'
+      }}
+    />
   </div>
 );
 
@@ -85,38 +87,42 @@ export default (props) => (
       }
 
       return (
-        <div style={{
-          flexBasis: '485px',
-          flexShrink: '0',
-          position: 'relative'
-        }}>
-          <Img fluid={data.amigaImage.childImageSharp.fluid} />
-          <div
-            className="screenWrapper"
-            style={{
-              perspective: '650px',
-              perspectiveOrigin: '50% -15%',
-              position: "absolute",
-              top: '0',
-              left: '0',
-              width: '100%',
-              height: '100%',
-            }}
-          >
-            <div style={screenPositioningStyles}>
-              {/* <Athena /> */}
-              <CurrentScreen />
+        <Mobile>
+          {(isMobile) => (
+            <div style={{
+              flexBasis: '485px',
+              flexShrink: '0',
+              position: 'relative',
+              marginTop: isMobile && '-30px',
+            }}>
+              <Img fluid={data.amigaImage.childImageSharp.fluid} />
+              <div
+                className="screenWrapper"
+                style={{
+                  perspective: '650px',
+                  perspectiveOrigin: '50% -15%',
+                  position: "absolute",
+                  top: '0',
+                  left: '0',
+                  width: '100%',
+                  height: '100%',
+                }}
+              >
+                <div style={screenPositioningStyles}>
+                  <CurrentScreen />
+                </div>
+                <div
+                  className="screen-overlay"
+                  style={{
+                    ...screenPositioningStyles,
+                    backgroundImage: 'radial-gradient(closest-side, rgba(105,182,108,0.30) 50%, rgba(105,182,108,0.00) 100%)',
+                  }}
+                >
+                </div>
+              </div>
             </div>
-            <div
-              className="screen-overlay"
-              style={{
-                ...screenPositioningStyles,
-                backgroundImage: 'radial-gradient(closest-side, rgba(105,182,108,0.30) 50%, rgba(105,182,108,0.00) 100%)',
-              }}
-            >
-            </div>
-          </div>
-        </div>
+          )}
+        </Mobile>
       )
     }}
   /> 
