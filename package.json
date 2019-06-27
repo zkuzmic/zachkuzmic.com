@@ -24,6 +24,7 @@
     "react-responsive": "^7.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
   "keywords": [
