@@ -11,7 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Desktop } from './screenSizes';
 import Header from "./header"
-import "../sass/_app.scss";
+import '../../node_modules/normalize.css/normalize.css';
+import '../css/_app.css';
 
 const Layout = ({ children, includeHeader = true }) => (
   <StaticQuery

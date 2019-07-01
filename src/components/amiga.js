@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from "gatsby";
 import Img from 'gatsby-image';
 import reactLogo from '../images/react.svg';
-import { Mobile } from '../components/screenSizes';
 
 // Amiga screens
 import Athena from '../components/amigaScreens/athena';
@@ -14,30 +13,15 @@ import Sports from '../components/amigaScreens/sports';
 import Wood from '../components/amigaScreens/wood';
 import Zach from '../components/amigaScreens/zach';
 
-const screenPositioningStyles = {
-  transform: 'rotateY(-11deg)',
-  position: "absolute",
-  top: '97px',
-  left: '191px',
-  width: '153px',
-  height: '118px',
-};
+// Styles
+import styles from './amiga.module.css';
 
 const DefaultScreen = () => (
-  <div style={{
-    alignItems: 'center',
-    display: 'flex',
-    width: '100%',
-    height: '100%',
-  }}>
+  <div className={styles.defaultScreenWrapper}>
     <img
       src={reactLogo}
       alt="React"
-      style={{
-        animation: 'spin 18s linear infinite',
-        margin: '0',
-        width: '100%'
-      }}
+      className={styles.defaultScreenSpin}
     />
   </div>
 );
@@ -87,43 +71,17 @@ export default (props) => (
       }
 
       return (
-        <Mobile>
-          {(isMobile) => (
-            <div style={{
-              flexBasis: '485px',
-              flexShrink: '0',
-              position: 'relative',
-              marginTop: isMobile && '-30px',
-            }}>
-              <Img fluid={data.amigaImage.childImageSharp.fluid} />
-              <div
-                className="screenWrapper"
-                style={{
-                  perspective: '650px',
-                  perspectiveOrigin: '50% -15%',
-                  position: "absolute",
-                  top: '0',
-                  left: '0',
-                  width: '100%',
-                  height: '100%',
-                }}
-              >
-                <div style={screenPositioningStyles}>
-                  <CurrentScreen />
-                </div>
-                <div
-                  className="screen-overlay"
-                  style={{
-                    ...screenPositioningStyles,
-                    backgroundImage: 'radial-gradient(closest-side, rgba(105,182,108,0.30) 50%, rgba(105,182,108,0.00) 100%)',
-                  }}
-                >
-                </div>
-              </div>
+        <div className={styles.amigaWrapper}>
+          <Img fluid={data.amigaImage.childImageSharp.fluid} />
+          <div className={styles.screenWrapper}>
+            <div className={styles.positionedScreen}>
+              <CurrentScreen />
             </div>
-          )}
-        </Mobile>
-      )
+            <div className={styles.screenOverlay}>
+            </div>
+          </div>
+        </div>
+      );
     }}
   /> 
 );

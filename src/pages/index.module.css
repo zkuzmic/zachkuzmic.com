@@ -1,0 +1,13 @@
+.heroWrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .heroWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

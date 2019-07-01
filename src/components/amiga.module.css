@@ -1,0 +1,53 @@
+.amigaWrapper {
+  flex-basis: 485px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.screenWrapper {
+  perspective: 650px;
+  perspective-origin: 50% -15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.positionedScreen {
+  transform: rotateY(-11deg);
+  position: absolute;
+  top: 97px;
+  left: 191px;
+  width: 153px;
+  height: 118px;
+}
+
+.screenOverlay {
+  composes: positionedScreen;
+  background-image: radial-gradient(closest-side, rgba(105,182,108,0.30) 50%, rgba(105,182,108,0.00) 100%);
+}
+
+.defaultScreenWrapper {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.defaultScreenSpin {
+  animation: spin 18s linear infinite;
+  margin: 0;
+  width: 100%;
+}
+
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+@media (max-width: 767px) {
+  .amigaWrapper {
+    margin-top: -30px;
+  }
+}

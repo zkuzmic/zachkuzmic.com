@@ -1,11 +1,14 @@
 import React from "react";
 // import { Link } from "gatsby";
 
-import { Mobile } from '../components/screenSizes';
+// Components
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HeroText from '../components/heroText/heroText';
 import Amiga from '../components/amiga';
+
+// Styles
+import styles from './index.module.css';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -24,27 +27,15 @@ class IndexPage extends React.Component {
     return (
       <Layout includeHeader={false}>
         <SEO title="Zach Kuzmic - Home" keywords={[`Zach Kuzmic`, `Front End Engineer`, `UX`, `Design`, `react`]} />
-        <Mobile>
-          {(isMobile) => (
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              flexWrap: isMobile && 'wrap',
-              justifyContent: isMobile && 'center',
-              borderBottom: '1px solid rgba(0,0,0,0.1)',
-              paddingBottom: '30px'
-            }}>
-              <HeroText
-                onHighlightChange={this.handleHighlightChange}
-                highlightedLink={this.state.highlightedLink}
-              />
-              <Amiga
-                highlightedLink={this.state.highlightedLink}
-              />
-            </div>
-          )}
-        </Mobile>
-        
+        <div className={styles.heroWrapper}>
+          <HeroText
+            onHighlightChange={this.handleHighlightChange}
+            highlightedLink={this.state.highlightedLink}
+          />
+          <Amiga
+            highlightedLink={this.state.highlightedLink}
+          />
+        </div>
         {/* <Link to="/page-2/">Go to page 2</Link> */}
         <p style={{ marginTop: 24, fontSize: 14, textAlign: 'center' }}>I'll be updating this site with some examples of my work soon.</p>
       </Layout>
