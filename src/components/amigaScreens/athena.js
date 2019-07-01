@@ -19,7 +19,10 @@ export default () => (
     `}
     render={data => (
       <div className={styles.screenWrapper}>
-        <Img fixed={data.athenaImage.childImageSharp.fixed} />
+        <Img
+          fixed={data.athenaImage.childImageSharp.fixed}
+          loading="eager"
+        />
       </div>
     )}
   /> 

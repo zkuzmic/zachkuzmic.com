@@ -19,7 +19,10 @@ export default () => (
     `}
     render={data => (
       <div className={styles.screenWrapper}>
-        <Img fixed={data.austinImage.childImageSharp.fixed} />
+        <Img
+          fixed={data.austinImage.childImageSharp.fixed}
+          loading="eager"
+        />
       </div>
     )}
   /> 
