@@ -1,0 +1,16 @@
+.highlighted {
+  border-bottom: 1px dotted #871616;
+  color: #871616;
+  text-shadow: 0 0 4px rgba(255, 172, 172, 0.6);
+  animation: colorPulse 2s infinite linear alternate;
+}
+
+.notHighlighted {
+  border-bottom: 1px dotted #000;
+}
+
+@keyframes colorPulse {
+		to {
+			color: rgb(231, 125, 125);
+		}
+}

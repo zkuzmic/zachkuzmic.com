@@ -2,6 +2,8 @@ import React from 'react';
 import { StaticQuery, graphql } from "gatsby";
 import Img from 'gatsby-image';
 
+import styles from './amigaScreen.module.css';
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -16,13 +18,7 @@ export default () => (
       }
     `}
     render={data => (
-      <div style={{
-        alignItems: 'center',
-        display: 'flex',
-        height: '100%',
-        justifyContent: 'center',
-        width: '100%',
-      }}>
+      <div className={styles.screenWrapper}>
         <Img fixed={data.zachImage.childImageSharp.fixed} />
       </div>
     )}
