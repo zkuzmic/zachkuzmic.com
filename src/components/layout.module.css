@@ -1,3 +1,7 @@
+:global(*) {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Merriweather', serif;
   line-height: 1.6;

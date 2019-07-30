@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HeroText from '../components/heroText/heroText';
 import Amiga from '../components/amiga';
+import ForgeBox from '../components/softwareBox/boxes/forgeBox';
 
 // Styles
 import styles from './index.module.css';
@@ -38,6 +39,7 @@ class IndexPage extends React.Component {
         </div>
         {/* <Link to="/page-2/">Go to page 2</Link> */}
         <p style={{ marginTop: 24, fontSize: 14, textAlign: 'center' }}>I'll be updating this site with some examples of my work soon.</p>
+        <ForgeBox />
       </Layout>
     );
   }

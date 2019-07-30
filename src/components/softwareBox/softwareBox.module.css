@@ -1,0 +1,110 @@
+.scene {
+  width: 250px;
+  height: 300px;
+  perspective: 600px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px) rotateY(40deg);
+  transition: transform 300ms ease-in-out;
+}
+
+.box:hover {
+  transform: translateZ(0) rotateY(0);
+}
+
+.box:hover .bottom {
+  box-shadow: none;
+}
+
+.spine {
+  position: absolute;
+  width: 50px;
+  height: 300px;
+  transform: rotateY(-90deg) translateZ(25px);
+}
+
+.front {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.bottom {
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  transform: rotateX(-90deg) translateZ(275px);
+  box-shadow: 0 30px 20px 10px hsla(0, 0%, 0%, 0.2);
+  transition: box-shadow 300ms ease-in;
+}
+
+/* Forge Box */
+.forgeSpine {
+  color: white;
+  background: black;
+  height: 100%;
+  width: 100%;
+}
+
+.forgeFront {
+  color: white;
+  background: black;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.forgeFlame {
+  width: 105px;
+  margin: 0 auto;
+}
+
+.forgeFrontTitle {
+  font-size: 42px;
+  line-height: 1;
+  margin: 10px 0 8px;
+  text-align: center;
+}
+
+.forgeFrontSubtitle {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.forgeSpineText {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg) translateX(125px) translateY(125px);
+  width: 300px;
+  height: 50px;
+}
+
+.forgeSpineTitle {
+  font-size: 24px;
+  line-height: 1;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.forgeSpineSubtitle {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+.forgeAthenaLogo {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  height: 46px;
+  width: 46px;
+}
