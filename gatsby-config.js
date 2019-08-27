@@ -9,7 +9,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Righteous', 'Merriweather']
+          families: ['Righteous', 'Merriweather', 'VT323'],
         }
       }
     },

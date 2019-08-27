@@ -2,6 +2,16 @@
   width: 250px;
   height: 300px;
   perspective: 600px;
+  padding: 5px;
+  border-radius: 8px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  transition: border-color ease-out 200ms;
+}
+
+.sceneSelected {
+  border-color: #06648a;
 }
 
 .box {
