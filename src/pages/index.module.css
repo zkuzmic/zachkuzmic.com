@@ -15,22 +15,21 @@
 .modalContent {
   top: 50%;
   left: 50%;
-  right: auto;
-  bottom: auto;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
+  max-width: 500px;
   position: absolute;
   background: #222222;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   outline: none;
   border-radius: 25px;
-  border: 5px solid #2f2f2f;
+  border: 35px solid #2f2f2f;
   padding: 20px;
   color: #33ff33;
   font-family: 'VT323', monospace;
   font-size: 24px;
   box-shadow: 0px 10px 25px -4px rgba(0,0,0,0.75);
+  line-height: 1.3;
 }
 
 .modalOverlay {
@@ -50,4 +49,32 @@
 
 .modalOverlay_beforeClose {
   opacity: 0;
+}
+
+.work {
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+}
+
+.workText {
+  margin-left: 150px;
+}
+
+.workHeading {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.workSubheading {
+  font-size: 14px;
+  margin-top: 4px;
+  opacity: 0.65;
+}
+
+.workRight .workText{
+  margin-left: 0;
+  
 }

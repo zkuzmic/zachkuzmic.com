@@ -7,11 +7,6 @@
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
-  transition: border-color ease-out 200ms;
-}
-
-.sceneSelected {
-  border-color: #06648a;
 }
 
 .box {
@@ -20,15 +15,6 @@
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px) rotateY(40deg);
-  transition: transform 300ms ease-in-out;
-}
-
-.box:hover {
-  transform: translateZ(0) rotateY(0);
-}
-
-.box:hover .bottom {
-  box-shadow: none;
 }
 
 .spine {
@@ -51,7 +37,6 @@
   position: absolute;
   transform: rotateX(-90deg) translateZ(275px);
   box-shadow: 0 30px 20px 10px hsla(0, 0%, 0%, 0.2);
-  transition: box-shadow 300ms ease-in;
 }
 
 /* Forge Box */

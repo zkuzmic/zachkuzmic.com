@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Righteous', sans-serif;
 }
 
+p {
+  line-height: 1.7;
+}
+
 .contentWrapper {
   background: #FFFFF6;
   box-shadow: 0px 2px 15px -2px rgb(0, 0, 0, 0.2);

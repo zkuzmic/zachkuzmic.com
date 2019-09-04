@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from 'react-modal';
 
 // Components
 import Layout from '../components/layout';
@@ -7,20 +6,15 @@ import SEO from '../components/seo';
 import HeroText from '../components/heroText/heroText';
 import Amiga from '../components/amiga';
 import ForgeBox from '../components/softwareBox/boxes/forgeBox';
-import ForgeModalContent from '../components/modalContent/forge';
 
 // Styles
 import styles from './index.module.css';
-
-Modal.setAppElement('#___gatsby');
 
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       highlightedLink: null,
-      modalOpen: false,
-      modalForgeOpen: false,
     };
   }
 
@@ -31,28 +25,9 @@ class IndexPage extends React.Component {
     }
   }
 
-  openModal = () => {
-    this.setState({ modalOpen: true });
-  }
-
-  handleBoxClick = (boxID) => {
-    this.setState({
-      modalOpen: true,
-      modalContent: this.getModalContent(boxID),
-    });
-  }
-
-  getModalContent = (boxID) => {
-    switch (boxID) {
-      case 'forge':
-        this.setState({ modalForgeOpen: true });
-        return <ForgeModalContent />;
-      default:
-        return null;
-    }
-  }
-
   render() {
+    const { highlightedLink } = this.state;
+
     return (
       <Layout includeHeader={false}>
         <div className={styles.test} />
@@ -60,30 +35,39 @@ class IndexPage extends React.Component {
         <div className={styles.heroWrapper}>
           <HeroText
             onHighlightChange={this.handleHighlightChange}
-            highlightedLink={this.state.highlightedLink}
+            highlightedLink={highlightedLink}
           />
           <Amiga
-            highlightedLink={this.state.highlightedLink}
+            highlightedLink={highlightedLink}
           />
         </div>
-        <p style={{ marginTop: 24, fontSize: 14, textAlign: 'center' }}>I'll be updating this site with some examples of my work soon.</p>
-        <ForgeBox
-          onClick={this.handleBoxClick}
-          selected={this.state.modalForgeOpen}
-        />
-        <Modal
-          isOpen={this.state.modalOpen}
-          className={styles.modalContent}
-          overlayClassName={{
-            base: styles.modalOverlay,
-            afterOpen: styles.modalOverlay_afterOpen,
-            beforeClose: styles.modalOverlay_beforeClose,
-          }}
-          contentLabel="Example Modal"
-          closeTimeoutMS={600}
-        >
-          { this.state.modalContent }
-        </Modal>
+        <p style={{ marginTop: 24, fontSize: 14, textAlign: 'center' }}>Some of my latest work:</p>
+        <div className={styles.work}>
+          <ForgeBox />
+          <div className={styles.workText}>
+            <h2 className={styles.workHeading}>Forge</h2>
+            <p className={styles.workSubheading}>athenahealth Design System</p>
+            <p>
+              As a UX Engineer on athenahealth&apos;s Design System team, I helped build a
+              UI library of React components called Forge. From simple inputs to complex typeahead
+              components, Forge was built with a focus on usability and accessibility, for use
+              throughout the company on a variety of user-facing products.
+            </p>
+          </div>
+        </div>
+        <div className={`${styles.work} ${styles.workRight}`}>
+          <div className={styles.workText}>
+            <h2 className={styles.workHeading}>Forge</h2>
+            <p className={styles.workSubheading}>athenahealth Design System</p>
+            <p>
+              As a UX Engineer on athenahealth&apos;s Design System team, I helped build a
+              UI library of React components called Forge. From simple inputs to complex typeahead
+              components, Forge was built with a focus on usability and accessibility, for use
+              throughout the company on a variety of user-facing products.
+            </p>
+          </div>
+          <ForgeBox />
+        </div>
       </Layout>
     );
   }

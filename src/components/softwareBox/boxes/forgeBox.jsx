@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import SoftwareBox from '../softwareBox';
@@ -28,8 +27,6 @@ const ForgeBox = (props) => (
     `}
     render={(data) => (
       <SoftwareBox
-        selected={props.selected}
-        onClick={() => { props.onClick('forge'); }}
         spine={
           (
             <div className={styles.forgeSpine}>
@@ -56,14 +53,5 @@ const ForgeBox = (props) => (
     )}
   />
 );
-
-ForgeBox.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  selected: PropTypes.bool,
-};
-
-ForgeBox.defaultProps = {
-  selected: false,
-};
 
 export default ForgeBox;
