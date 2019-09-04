@@ -15,6 +15,15 @@ p {
   line-height: 1.7;
 }
 
+a {
+  color: #039156;
+  transition: color 200ms ease-out;
+}
+
+a:hover {
+  color: #006139;
+}
+
 .contentWrapper {
   background: #FFFFF6;
   box-shadow: 0px 2px 15px -2px rgb(0, 0, 0, 0.2);

@@ -7,6 +7,7 @@
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
+  flex-shrink: 0;
 }
 
 .box {
@@ -14,20 +15,41 @@
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
+}
+
+.left .box {
   transform: translateZ(-100px) rotateY(40deg);
+}
+
+.right .box {
+  transform: translateZ(-120px) rotateY(-40deg);
 }
 
 .spine {
   position: absolute;
   width: 50px;
   height: 300px;
+}
+
+.left .spine {
   transform: rotateY(-90deg) translateZ(25px);
+}
+
+.right .spine {
+  transform: rotateY(90deg) translateZ(225px);
 }
 
 .front {
   position: absolute;
   width: 250px;
   height: 300px;
+}
+
+.left .front {
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.right .front {
   transform: rotateY(0deg) translateZ(25px);
 }
 
@@ -102,4 +124,119 @@
   left: 2px;
   height: 46px;
   width: 46px;
+}
+
+
+/* Benchmarcs Box */
+.benchmarcsFront {
+  color: #666;
+  background: white;
+  height: 100%;
+  width: 100%;
+  border: 6px solid #8BC832;
+}
+
+.benchmarcsGraph {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.benchmarcsFrontLogo {
+  width: 90%;
+  margin: 5px auto 15px;
+}
+
+.benchmarcsFrontSubtitle {
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.benchmarcsSpine {
+  color: white;
+  background: #8BC832;
+  height: 100%;
+  width: 100%;
+}
+
+.benchmarcsSpineText {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg) translateX(125px) translateY(125px);
+  width: 300px;
+  height: 50px;
+}
+
+.benchmarcsSpineTitle {
+  font-size: 24px;
+  line-height: 1;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.benchmarcsBLogo {
+  position: absolute;
+  bottom: 15px;
+  left: 13px;
+  width: 24px;
+  height: auto;
+}
+
+/* Agility Box */
+.agilityFront {
+  background-image: radial-gradient(farthest-corner at 74% 101%, #FFAC3E 31%, #ED7F00 100%);
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  color: white;
+}
+
+.agilityFrontLogo {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.agilityFrontTitle {
+  text-align: center;
+  font-size: 31px;
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.agilityFrontSubtitle {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.agilitySpine {
+  color: white;
+  background: #262A43;
+  height: 100%;
+  width: 100%;
+}
+
+.agilitySpineText {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg) translateX(125px) translateY(125px);
+  width: 300px;
+  height: 50px;
+}
+
+.agilitySpineTitle {
+  font-size: 20px;
+  line-height: 1;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.agilitySpineLogo {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  width: 30px;
+  height: auto;
 }

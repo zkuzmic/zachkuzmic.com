@@ -51,14 +51,23 @@
   opacity: 0;
 }
 
+.workSectionHeading {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
 .work {
   margin: 0 auto;
   max-width: 700px;
   display: flex;
+  margin-bottom: 80px;
 }
 
 .workText {
-  margin-left: 150px;
+  margin-left: 15px;
 }
 
 .workHeading {
@@ -76,5 +85,4 @@
 
 .workRight .workText{
   margin-left: 0;
-  
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import SoftwareBox from '../softwareBox';
@@ -27,6 +28,7 @@ const ForgeBox = (props) => (
     `}
     render={(data) => (
       <SoftwareBox
+        direction={props.direction}
         spine={
           (
             <div className={styles.forgeSpine}>
@@ -53,5 +55,13 @@ const ForgeBox = (props) => (
     )}
   />
 );
+
+ForgeBox.propTypes = {
+  direction: PropTypes.oneOf(['left', 'right']),
+};
+
+ForgeBox.defaultProps = {
+  direction: 'left',
+};
 
 export default ForgeBox;

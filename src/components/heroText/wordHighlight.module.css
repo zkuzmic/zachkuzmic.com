@@ -3,10 +3,12 @@
   color: #871616;
   text-shadow: 0 0 4px rgba(255, 172, 172, 0.6);
   animation: colorPulse 2s infinite linear alternate;
+  cursor: default;
 }
 
 .notHighlighted {
   border-bottom: 1px dotted #000;
+  cursor: default;
 }
 
 @keyframes colorPulse {
