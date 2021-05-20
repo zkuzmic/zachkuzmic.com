@@ -1,10 +1,10 @@
 .heading {
   margin-bottom: 1rem;
-  font-size: 36px;
+  font-size: 48px;
 }
 
 .paragraph {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (min-width: 992px) {
@@ -13,6 +13,6 @@
   }
 
   .paragraph {
-    font-size: 18px;
+    font-size: 20px;
   }
 }

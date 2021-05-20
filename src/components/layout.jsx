@@ -14,7 +14,7 @@ import Header from "./header"
 
 // Styles
 import '../../node_modules/normalize.css/normalize.css';
-import styles from './layout.module.css';
+import * as styles from './layout.module.css';
 
 const Layout = ({ children, includeHeader = true }) => (
   <StaticQuery
@@ -36,14 +36,11 @@ const Layout = ({ children, includeHeader = true }) => (
               <main>{children}</main>
             </div>
           </div>
-          <footer className={styles.footer}>
-            © {new Date().getFullYear()} Zach Kuzmic
-          </footer>
         </>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

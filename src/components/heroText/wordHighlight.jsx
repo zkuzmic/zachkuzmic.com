@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './wordHighlight.module.css';
+import * as styles from './wordHighlight.module.css';
 
 const WordHighlight = (props) => {
   const {

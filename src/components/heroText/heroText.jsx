@@ -4,7 +4,7 @@ import React from 'react';
 import WordHighlight from './wordHighlight';
 
 // Styles
-import styles from './heroText.module.css';
+import * as styles from './heroText.module.css';
 
 class HeroText extends React.Component {
   handleMouseEnter = ({ target }) => {
@@ -27,14 +27,12 @@ class HeroText extends React.Component {
           I&apos;m
           {' '}
           <WordHighlight {...wordHighlightProps} id="wh-zach">Zach Kuzmic</WordHighlight>
-          , a Front End Developer with a background in User Experience Design, currently working
-          at
-          {' '}
-          <WordHighlight {...wordHighlightProps} id="wh-athena">athenahealth</WordHighlight>
+          , a Front End Developer with a background in User Experience Design, currently
+          living and working in
           {' '}
           in
           {' '}
-          <WordHighlight {...wordHighlightProps} id="wh-austin">Austin, TX</WordHighlight>
+          <WordHighlight {...wordHighlightProps} id="wh-chicago">Chicago, IL</WordHighlight>
           .
         </p>
         <p className={styles.paragraph}>

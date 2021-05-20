@@ -3,12 +3,17 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: "Righteous", sans-serif;
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Righteous', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous", sans-serif;
 }
 
 p {
@@ -25,8 +30,6 @@ a:hover {
 }
 
 .contentWrapper {
-  background: #FFFFF6;
-  box-shadow: 0px 2px 15px -2px rgb(0, 0, 0, 0.2);
   margin: 3px 3px 8px 3px;
   overflow: hidden;
   max-width: 1100px;
