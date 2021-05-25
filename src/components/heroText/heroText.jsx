@@ -30,8 +30,6 @@ class HeroText extends React.Component {
           , a Front End Developer with a background in User Experience Design, currently
           living and working in
           {' '}
-          in
-          {' '}
           <WordHighlight {...wordHighlightProps} id="wh-chicago">Chicago, IL</WordHighlight>
           .
         </p>
