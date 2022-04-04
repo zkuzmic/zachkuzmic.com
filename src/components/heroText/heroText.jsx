@@ -49,7 +49,7 @@ class HeroText extends React.Component {
           {' '}
           and probably care too much about the
           {' '}
-          <WordHighlight {...wordHighlightProps} id="wh-indians">Cleveland Indians</WordHighlight>
+          <WordHighlight {...wordHighlightProps} id="wh-indians">Cleveland Guardians</WordHighlight>
           .
         </p>
       </div>
